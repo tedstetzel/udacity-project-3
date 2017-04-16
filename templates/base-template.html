@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+  <title>Udacity Project Three Blog</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+              <a href="/blog">  
+                <img src="/static/digital-dog.png" alt="Dog Logo" style="width:45px;height:45px;">
+              </a>
+            </div>
+            <h1>Lesson 3 Blog</h1>
+
+        </div>
+
+        <div class="nav-bar">
+            <ul class="nav">
+              <li><a href="/blog">Home</a></li>
+              <li><a href="/new-post">Post</a></li>
+              <li class="right"><a href="/login">Log In</a></li>
+            </ul>
+        </div>
+
+        <div id="body" class="body">
+          {% block content %}
+          {% endblock %}
+        </div>
+
+    </div>
+</body>
+
+</html>
+

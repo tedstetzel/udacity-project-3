@@ -1,0 +1,31 @@
+{% extends "base-template.html" %}
+
+{% block content %}
+    <h2>Sign Up Page</h2>
+    <form method="post">
+        <label>
+         <div>User Name:</div>
+         <input type="text" name="title" value="{{title}}">
+        </label>
+
+        <label>
+         <div>Password:</div>
+         <input type="password" name="title" value="{{title}}">
+        </label>
+
+        <label>
+         <div>Confirm Password:</div>
+         <input type="password" name="title" value="{{title}}">
+        </label>
+
+        <label>
+         <div>Email address:</div>
+         <input type="password" name="title" value="{{title}}">
+        </label>
+        <div>Already have an account?<a href="/login">Sign in here</a></div>
+      
+      <div class="error">{{error}}</div>
+
+      <input type="submit">
+</form>
+{% endblock %}

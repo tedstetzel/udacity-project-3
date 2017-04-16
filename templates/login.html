@@ -1,19 +1,20 @@
 {% extends "base-template.html" %}
 
 {% block content %}
-    <h2> add a new post to the blog</h2>
+    <h2>Login In Page</h2>
 
     <form method="post">
         <label>
-         <div>Title</div>
+         <div>User Name:</div>
          <input type="text" name="title" value="{{title}}">
         </label>
 
         <label>
-            <div>text</div>
-            <textarea rows="10" cols="50" name="content">{{content}}</textarea>
+         <div>Password:</div>
+         <input type="password" name="title" value="{{title}}">
         </label>
 
+        <div>Don't have an account? <a href="/sign-up">Create one here</a></div>
       <div class="error">{{error}}</div>
 
       <input type="submit">
